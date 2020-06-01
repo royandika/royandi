@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>C++ &#8211; Roy Andika</title>
+	<atom:link href="http://OFFLINEZIP.wpshocategory/c/feed/" rel="self" type="application/rss+xml" />
+	<link>http://OFFLINEZIP.wpsho</link>
+	<description>Personal Blog</description>
+	<lastBuildDate>Mon, 15 Dec 2014 01:45:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+	<item>
+		<title>Latihan C++ #5</title>
+		<link>http://OFFLINEZIP.wpsholatihan-c-5/</link>
+					<comments>http://OFFLINEZIP.wpsholatihan-c-5/#comments</comments>
+		
+		<dc:creator><![CDATA[Roy Andika]]></dc:creator>
+		<pubDate>Mon, 15 Dec 2014 01:45:00 +0000</pubDate>
+				<category><![CDATA[C++]]></category>
+		<category><![CDATA[Pemrograman]]></category>
+		<guid isPermaLink="false">http://OFFLINEZIP.wpsholatihan-c-5/</guid>
+
+					<description><![CDATA[<p>Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman. Buatlah program untuk mencari grade nilai pada total nilai dengan tampilan sebagai berikut: Tampilan [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-5/">Latihan C++ #5</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css" integrity="sha256-xevuwyBEb2ZYh4nDhj0g3Z/rDBnM569hg9Vq6gEw/Sg=" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css" integrity="sha256-fPXvMqJjeydW056U7AUM/dp5L+sRz0xPK0Mx3p20nkI=" crossorigin="anonymous" />
+<div style="clear: both; text-align: center;"><img border="0" src="https://2.bp.blogspot.com/-NTFUZJVD9nQ/VGyYrsmgkCI/AAAAAAAAMfg/1ZqQhn8sdqI/s1600/C-Logo.jpg" height="171" width="320" /></div>
+<div style="text-align: justify;">Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman.</p>
+</div>
+<p><a name='more'></a></p>
+<div style="text-align: justify;"><!-- Adsense -->Buatlah program untuk mencari grade nilai pada total nilai dengan tampilan sebagai berikut:</p>
+<p>Tampilan awal:<br /><span style="font-family: Courier New, Courier, monospace;">AMIK BINA SARANA INFORMATIKA<br />&#x201c;[nama kelompok anda]&#x201d;<br />===============================<br />NIM : &lt;IN&gt;<br />NAMA MAHASISWA : &lt;IN&gt;<br />KODE MATA KULIAH : &lt;IN&gt;<br />MATA KULIAH : &lt;OUT&gt;<br />MAX KEHADIRAN : &lt;IN&gt;<br />JUMLAH KEHADIRAN : &lt;IN&gt;<br />NILAI PRESENSI : &lt;OUT&gt;<br />NILAI TUGAS [0-100] : &lt;IN&gt;<br />NILAI UTS [0-100] : &lt;IN&gt;<br />NILAI UAS [0-100] : &lt;IN&gt;<br />==============================<br />TOTAL NILAI : &lt;OUT&gt;<br />GRADE : &lt;OUT&gt;<br />STATUS : &lt;OUT&gt;</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>Mata kuliah berdasarkan dari ketentuan kode yang di inputkan, dengan aturan sebagai berikut:</div>
+<table>
+<thead>
+<tr>
+<th>Kode</th>
+<th>Mata Kuliah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>151</td>
+<td>Algoritma Dan Pemrograman</td>
+</tr>
+<tr>
+<td>628</td>
+<td>Struktur Data</td>
+</tr>
+<tr>
+<td>777</td>
+<td>Pemrograman Visual Basic</td>
+</tr>
+<tr>
+<td>228</td>
+<td>PTIK</td>
+</tr>
+</tbody>
+</table>
+<p><!-- Table by PureCss.io--></li>
+<li><b>Nilai presensi</b> = jumlah kehadiran dibagi max kehadiran dikali seratus</li>
+<li><b>Total nilai</b> = (nilai presensi x 10%) + (nilai tugas x 20%) + (nilai uts x 30%) + (nilai uas x 40%)</li>
+<li><b>Grade</b>: mendapat grade &#8220;A&#8221; jika total nilai diatas 78, mendapat grade &#8220;B&#8221; apabila mendapat total nilai diatas 67, mendapat grade &#8220;C&#8221; jika mendapat total nilai lebihdari 55, mendapat nilai &#8220;D&#8221; jika total nilai lebih dari 46 dan jika nilai dibawah itu mendapat nilai &#8220;E&#8221;</li>
+<li><b>Status</b>:  Status  &#8220;sangat  baik&#8221;  jika  mendapat  grade  &#8220;A&#8221;,  mendapat  status  &#8220;Baik&#8221;  apabila mendapat  grade  &#8220;B&#8221;,  mendapat  status  &#8220;Cukup&#8221;  jika  mendapat  nilai  &#8220;C&#8221;,  mendapat  nilai &#8220;Buruk&#8221; bila mendapat nilai &#8220;D&#8221;, dan status &#8220;Gagal&#8221; jika mendapat nilai&#8221;E&#8221;</li>
+</ul>
+<p>Soal oleh: Agung Sasongko, S.Kom</p>
+<div style="text-align: center;"><span style="color: red; font-size: large;">Jawaban</span></div>
+<pre><code>#include &lt;conio.h&gt;<br />#include &lt;iostream.h&gt;<br />#include &lt;stdio.h&gt;<br />#include &lt;string.h&gt;<br /><br />class Cmahasiswa<br />{<br /> public:<br /> char nim[8],nama[20],kode[3];<br />   float max_hadir,jml_hadir,tugas,uts,uas;<br /> <br /> char *mata_kuliah()<br /> {<br />  char *mtk;<br />  if (kode[0] == '1' &amp;&amp; kode[1] == '5' &amp;&amp; kode[2] == '1')<br />  {mtk = &quot;Algoritma Dan Pemrograman&quot;;}<br />  else if (kode[0] == '6' &amp;&amp; kode[1] == '2' &amp;&amp; kode[2] == '8')<br />  {mtk = &quot;Struktur Data&quot;;}<br />  else if (kode[0] == '7' &amp;&amp; kode[1] == '7' &amp;&amp; kode[2] == '7')<br />  {mtk = &quot;Pemrograman Visual Basic&quot;;}<br />  else if (kode[0] == '2' &amp;&amp; kode[1] == '2' &amp;&amp; kode[2] == '8')<br />  {mtk = &quot;PTIK&quot;;}<br />  else {mtk = &quot;Kode mata kuliah tidak ditemukan&quot;;}<br />      return mtk;<br /> }<br /><br />   float presensi()<br />   {<br />     return (jml_hadir / max_hadir)*100;<br />   }<br /><br />   float total()<br />   {<br />     return (presensi() * 0.1) + (tugas * 0.2) + (uts * 0.3) + (uas * 0.4);<br />   }<br /><br />   char *grade()<br />   {<br />  char *g;<br />    if   (total() &gt;= 78) {g = &quot;A&quot;;}<br />      else if (total() &gt;= 67) {g = &quot;B&quot;;}<br />      else if (total() &gt;= 55) {g = &quot;C&quot;;}<br />      else if (total() &gt;= 46) {g = &quot;D&quot;;}<br />      else  {g = &quot;E&quot;;}<br />      return g;<br />   }<br /><br />   char *status()<br />   {<br />  char *s;<br />    if   (*grade() == 'A') {s = &quot;Sangat Baik&quot;;}<br />      else if (*grade() == 'B') {s = &quot;Baik&quot;;}<br />      else if (*grade() == 'C') {s = &quot;Cukup&quot;;}<br />      else if (*grade() == 'D') {s = &quot;Buruk&quot;;}<br />      else  {s = &quot;Gagal&quot;;}<br />      return s;<br />   }<br /><br />};<br /><br />main()<br />{<br /> Cmahasiswa nilai;<br /> cout&lt;&lt;&quot; AMIK BINA SARANA INFORMATIKAn&quot;;<br /> cout&lt;&lt;&quot;   [nama kelompokanda]n&quot;;<br /> cout&lt;&lt;&quot;===================================================n&quot;;<br /> cout&lt;&lt;&quot;NIM   : &quot;; cin&gt;&gt;nilai.nim;<br /> cout&lt;&lt;&quot;Nama Mahasiswa  : &quot;; gets(nilai.nama);<br /> cout&lt;&lt;&quot;Kode Mata Kuliah : &quot;; cin&gt;&gt;nilai.kode;<br /> cout&lt;&lt;&quot;Mata Kuliah  : &quot;; cout&lt;&lt;nilai.mata_kuliah()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Max Kehadiran  : &quot;; cin&gt;&gt;nilai.max_hadir;<br />   cout&lt;&lt;&quot;Jumlah Kehadiran : &quot;; cin&gt;&gt;nilai.jml_hadir;<br />   cout&lt;&lt;&quot;Nilai Presensi  : &quot;; cout&lt;&lt;nilai.presensi()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Nilai Tugas [0 - 100] : &quot;; cin&gt;&gt;nilai.tugas;<br />   cout&lt;&lt;&quot;Nilai UTS [0 - 100] : &quot;; cin&gt;&gt;nilai.uts;<br />   cout&lt;&lt;&quot;Nilai UAS [0 - 100] : &quot;; cin&gt;&gt;nilai.uas;<br />   cout&lt;&lt;&quot;===================================================n&quot;;<br />   cout&lt;&lt;&quot;Total Nilai  : &quot;; cout&lt;&lt;nilai.total()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Grade   : &quot;; cout&lt;&lt;nilai.grade()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Status   : &quot;; cout&lt;&lt;nilai.status()&lt;&lt;&quot;n&quot;;<br /><br /> getch();<br />}</code></pre>
+<p></p>
+<div><center><br />
+<!-- roy-andika_main_Blog1_300x250_as --><br />
+<ins
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7871062608972422"
+     data-ad-slot="9224561210"></ins><br />
+</center></div>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-5/">Latihan C++ #5</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://OFFLINEZIP.wpsholatihan-c-5/feed/</wfw:commentRss>
+			<slash:comments>30</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Latihan C++ #4</title>
+		<link>http://OFFLINEZIP.wpsholatihan-c-4/</link>
+					<comments>http://OFFLINEZIP.wpsholatihan-c-4/#respond</comments>
+		
+		<dc:creator><![CDATA[Roy Andika]]></dc:creator>
+		<pubDate>Mon, 24 Nov 2014 03:56:00 +0000</pubDate>
+				<category><![CDATA[C++]]></category>
+		<category><![CDATA[Pemrograman]]></category>
+		<guid isPermaLink="false">http://OFFLINEZIP.wpsholatihan-c-4/</guid>
+
+					<description><![CDATA[<p>Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman. Buatlah program untuk mencari perhitungan biaya jasa pengiriman barang dengan tampilan sebagai berikut: Tampilan [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-4/">Latihan C++ #4</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css" integrity="sha256-xevuwyBEb2ZYh4nDhj0g3Z/rDBnM569hg9Vq6gEw/Sg=" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css" integrity="sha256-fPXvMqJjeydW056U7AUM/dp5L+sRz0xPK0Mx3p20nkI=" crossorigin="anonymous" />
+<div style="clear: both; text-align: center;"><img border="0" src="https://2.bp.blogspot.com/-NTFUZJVD9nQ/VGyYrsmgkCI/AAAAAAAAMfg/1ZqQhn8sdqI/s1600/C-Logo.jpg" height="171" width="320" /></div>
+<div style="text-align: justify;">Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman.</p>
+</div>
+<p><a name='more'></a></p>
+<div style="text-align: justify;"><!-- Adsense -->Buatlah program untuk mencari perhitungan biaya jasa pengiriman barang dengan tampilan sebagai berikut:</p>
+<p>Tampilan awal:<br /><span style="font-family: Courier New, Courier, monospace;">EXPEDISI JASA PENGIRIMAN BARANG<br /> &#x201c;[nama kelompok anda]&#x201d;<br />===============================<br />NAMA PENGIRIM : &lt;IN&gt;<br />ALAMAT PENGIRIM : &lt;IN&gt;<br />NAMA TUJUAN : &lt;IN&gt;<br />ALAMAT TUJUAN : &lt;IN&gt;<br />BERAT (KG) : &lt;IN&gt;<br />KODE TUJUAN [1/2/3/4] : &lt;IN&gt;</span></p>
+<p>Tampilan selanjutnya:<br /><span style="font-family: Courier New, Courier, monospace;">EXPEDISI JASA PENGIRIMAN BARANG<br /> &#x201c;[nama kelompok anda]&#x201d;<br />===============================<br />NAMA PENGIRIM : &lt;OUT&gt;<br />ALAMAT PENGIRIM : &lt;OUT&gt;<br />NAMA TUJUAN : &lt;OUT&gt;<br />ALAMAT TUJUAN : &lt;OUT&gt;<br />BERAT (KG) : &lt;OUT&gt;<br />KODE TUJUAN : &lt;OUT&gt;<br />===============================<br />HARGA PER KG : Rp. &lt;OUT&gt;<br />TOTAL HARGA : Rp. &lt;OUT&gt;<br />PPN 10% : Rp. &lt;OUT&gt;<br />===============================<br />TOTAL : Rp. &lt;OUT&gt;<br />BAYAR : Rp. &lt;OUT&gt;<br />KEMBALIAN : Rp. &lt;OUT&gt;</span></p>
+<p>Keterangan:</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Kode Tujuan</th>
+<th>Harga Per KG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>29500</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15750</td>
+</tr>
+<tr>
+<td>3</td>
+<td>13250</td>
+</tr>
+<tr>
+<td>4</td>
+<td>18250</td>
+</tr>
+</tbody>
+</table>
+<p><!-- Table by PureCss.io-->Soal oleh: Agung Sasongko, S.Kom</p>
+<div style="text-align: center;"><span style="color: red; font-size: large;">Jawaban</span></div>
+<pre><code>#include &lt;stdio.h&gt;<br />#include &lt;conio.h&gt;<br /><br />#include &lt;iostream.h&gt;<br /><br />#include &lt;string.h&gt;<br /><br /><br /><br />class Cpengiriman<br /><br />{<br /><br /> public:<br /><br /> char nama_pengirim[20], almt_pengirim[20], nama_tujuan[20], almt_tujuan[20];<br /><br /> int berat,kode;<br /><br />   long bayar;<br /><br /><br /><br />   long harga_kg()<br /><br />   {<br /><br />      long p;<br /><br />     if   (kode == 1) {p = 29500;}<br /><br />      else if (kode == 2) {p = 15750;}<br /><br />      else if (kode == 3) {p = 13250;}<br /><br />      else if (kode == 4) {p = 18250;}<br /><br />      else  {p = 0;}<br /><br />      return p;<br /><br />   }<br /><br /><br /><br />   long total_harga()<br /><br />   {return harga_kg() * berat;}<br /><br /><br /><br />   long ppn()<br /><br />   {return total_harga() * 0.1;}<br /><br /><br /><br /> long total_bayar()<br /><br />   {return total_harga() + ppn();}<br /><br /><br /><br />   long kembalian()<br /><br />   {return bayar - total_bayar();}<br /><br /><br /><br />};<br /><br /><br /><br />main()<br /><br />{<br /><br /> Cpengiriman kirim;<br /><br /> cout&lt;&lt;&quot;EXPEDISI JASA PENGIRIMAN BARANG&quot;&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Kelompok Roy, Febri &amp; Ratna&quot;&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;=========================================&quot;&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Nama Pengirim  : &quot;; gets(kirim.nama_pengirim);<br /><br /> cout&lt;&lt;&quot;Alamat Pengirim  : &quot;; gets(kirim.almt_pengirim);<br /><br /> cout&lt;&lt;&quot;Nama Tujuan  : &quot;; gets(kirim.nama_tujuan);<br /><br /> cout&lt;&lt;&quot;Alamat Tujuan  : &quot;; gets(kirim.almt_tujuan);<br /><br /> cout&lt;&lt;&quot;Berat (Kg)  : &quot;; cin&gt;&gt;kirim.berat;<br /><br /> cout&lt;&lt;&quot;Kode Tujuan [1/2/3/4] : &quot;; cin&gt;&gt;kirim.kode;<br /><br /><br /><br /> clrscr();<br /><br /><br /><br /> cout&lt;&lt;&quot;EXPEDISI JASA PENGIRIMAN BARANGn&quot;;<br /><br /> cout&lt;&lt;&quot;Kelompok Roy, Febri &amp; Ratnan&quot;;<br /><br /> cout&lt;&lt;&quot;=========================================n&quot;;<br /><br /> cout&lt;&lt;&quot;Nama Pengirim  : &quot;; cout&lt;&lt;kirim.nama_pengirim&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Alamat Pengirim  : &quot;; cout&lt;&lt;kirim.almt_pengirim&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Nama Tujuan  : &quot;; cout&lt;&lt;kirim.nama_tujuan&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Alamat Tujuan  : &quot;; cout&lt;&lt;kirim.almt_tujuan&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Berat (Kg)  : &quot;; cout&lt;&lt;kirim.berat&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Kode Tujuan [1/2/3/4] : &quot;; cout&lt;&lt;kirim.kode&lt;&lt;&quot;n&quot;;<br /><br />   cout&lt;&lt;&quot;=========================================n&quot;;<br /><br />   cout&lt;&lt;&quot;Harga Per Kg  : &quot;; cout&lt;&lt;kirim.harga_kg()&lt;&lt;&quot;n&quot;;<br /><br />   cout&lt;&lt;&quot;Total Harga  : &quot;; cout&lt;&lt;kirim.total_harga()&lt;&lt;&quot;n&quot;;<br /><br />   cout&lt;&lt;&quot;PPN 10%   : &quot;; cout&lt;&lt;kirim.ppn()&lt;&lt;&quot;n&quot;;<br /><br />   cout&lt;&lt;&quot;=========================================n&quot;;<br /><br />   cout&lt;&lt;&quot;TOTAL   : &quot;; cout&lt;&lt;kirim.total_bayar()&lt;&lt;&quot;n&quot;;<br /><br />   cout&lt;&lt;&quot;Bayar   : &quot;; cin&gt;&gt;kirim.bayar;<br /><br />   cout&lt;&lt;&quot;Kembalian  : &quot;; cout&lt;&lt;kirim.kembalian()&lt;&lt;&quot;n&quot;;<br /><br /><br /><br /> getch();<br /><br />}</code></pre>
+<p></p>
+<div><center><br />
+<!-- roy-andika_main_Blog1_300x250_as --><br />
+<ins
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7871062608972422"
+     data-ad-slot="9224561210"></ins><br />
+</center></div>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-4/">Latihan C++ #4</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://OFFLINEZIP.wpsholatihan-c-4/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Latihan C++ #3</title>
+		<link>http://OFFLINEZIP.wpsholatihan-c-3/</link>
+					<comments>http://OFFLINEZIP.wpsholatihan-c-3/#respond</comments>
+		
+		<dc:creator><![CDATA[Roy Andika]]></dc:creator>
+		<pubDate>Mon, 24 Nov 2014 03:35:00 +0000</pubDate>
+				<category><![CDATA[C++]]></category>
+		<category><![CDATA[Pemrograman]]></category>
+		<guid isPermaLink="false">http://OFFLINEZIP.wpsholatihan-c-3/</guid>
+
+					<description><![CDATA[<p>Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman. Buatlah program untuk perhitungan penjualan di Swalayan dengan tampilan sebagai berikut: Tampilan awal:SWALAYAN&#x201c;[nama kelompok [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-3/">Latihan C++ #3</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css" integrity="sha256-xevuwyBEb2ZYh4nDhj0g3Z/rDBnM569hg9Vq6gEw/Sg=" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css" integrity="sha256-fPXvMqJjeydW056U7AUM/dp5L+sRz0xPK0Mx3p20nkI=" crossorigin="anonymous" />
+<div style="clear: both; text-align: center;"><img border="0" src="https://2.bp.blogspot.com/-NTFUZJVD9nQ/VGyYrsmgkCI/AAAAAAAAMfg/1ZqQhn8sdqI/s1600/C-Logo.jpg" height="171" width="320" /></div>
+<div style="text-align: justify;">Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman.</p>
+</div>
+<p><a name='more'></a></p>
+<div style="text-align: justify;"><!-- Adsense -->Buatlah program untuk perhitungan penjualan di Swalayan dengan tampilan sebagai berikut:</p>
+<p>Tampilan awal:<br /><span style="font-family: Courier New, Courier, monospace;">SWALAYAN<br />&#x201c;[nama kelompok anda]&#x201d;<br />===========================<br />KODE BARANG : &lt;IN&gt;<br />NAMA BARANG : &lt;OUT&gt;<br />HARGA SATUAN : &lt;OUT&gt;<br />JUMLAH BELI : &lt;OUT&gt; </span></p>
+<p>Tampilan baru selanjutnya:<br /><span style="font-family: Courier New, Courier, monospace;">SWALAYAN<br />&#x201c;[nama kelompok anda]&#x201d;<br />===========================<br />KODE BARANG : &lt;OUT&gt;<br />NAMA BARANG : &lt;OUT&gt;<br />HARGA SATUAN : &lt;OUT&gt;<br />JUMLAH BELI : &lt;OUT&gt;<br />===========================<br />HARGA TOTAL : Rp. &lt;OUT&gt;<br />DISKON : Rp. &lt;OUT&gt;<br />===========================<br />SUB TOTAL : Rp. &lt;OUT&gt;<br />PPN 10% : Rp. &lt;OUT&gt;<br />===========================<br />GRAND TOTAL : RP. &lt;OUT&gt;<br />BAYAR : Rp. &lt;IN&gt;<br />KEMBALIAN : Rp. &lt;OUT&gt;<br />TERIMA KASIH<br />ATAS KUNJUNGAN ANDA</span></p>
+<p>Keterangan:</p></div>
+<table>
+<thead>
+<tr>
+<th>Kode Barang</th>
+<th>Nama Barang</th>
+<th>Harga Satuan</th>
+<th>Diskon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D012</td>
+<td>Tepung Terigu 1Kg</td>
+<td>12000</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>D013</td>
+<td>Margarin 1Kg</td>
+<td>5600</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>D014</td>
+<td>Gula 1Kg</td>
+<td>9600</td>
+<td>7%</td>
+</tr>
+<tr>
+<td>D015</td>
+<td>Minyak Sayur 1 Kg</td>
+<td>6500</td>
+<td>2.5%</td>
+</tr>
+</tbody>
+</table>
+<p><!-- Table by PureCss.io-->Soal oleh: Agung Sasongko, S.Kom</p>
+<div style="text-align: center;"><span style="color: red; font-size: large;">Jawaban</span></div>
+<pre><code>#include &lt;iostream.h&gt;<br />#include &lt;stdio.h&gt;<br /><br />#include &lt;conio.h&gt;<br /><br />#include &lt;string.h&gt;<br /><br /><br /><br />class Cswalayan<br /><br />{<br /><br /> public:<br /><br /> char kode[4];<br /><br /> long jml_beli,bayar;<br /><br /><br /><br /> char *nama_brg()<br /><br /> {<br /><br />    char *n;<br /><br />      if  ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='2')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='2'))<br /> {n = &quot;Tepung terigu 1Kg&quot;;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='3')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='3'))<br /> {n = &quot;Margarin 1Kg&quot;;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='4')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='4'))<br /> {n = &quot;Gula 1Kg&quot;;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='5')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='5'))<br /> {n = &quot;Minyak 1Kg&quot;;}<br /><br />      else   {n = &quot;Kode tidak ditemukan&quot;;}<br /><br />      return n;<br /><br /> }<br /><br /><br /><br /> long harga_brg()<br /><br /> {<br /><br />    long h;<br /><br />      if  ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='2')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='2'))<br /> {h = 12000;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='3')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='3'))<br /> {h = 5600;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='4')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='4'))<br /> {h = 9600;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='5')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='5'))<br /> {h = 6500;}<br /><br />      else {h = 0;}<br /><br />      return h;<br /><br /> }<br /><br /><br /><br /> long diskon()<br /><br /> {<br /><br />    long d;<br /><br />      if   ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='2')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='2'))<br /> {d = 5;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='3')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='3'))<br /> {d = 0;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='4')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='4'))<br /> {d = 7;}<br /><br />      else if ((kode[0]=='D'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='5')||(kode[0]=='d'&amp;&amp;kode[1]=='0'&amp;&amp;kode[2]=='1'&amp;&amp;kode[3]=='5'))<br /> {d = 25;}<br /><br />      else {d = 0;}<br /><br />      return d;<br /><br /> }<br /><br /><br /><br /> long harga_total()<br /><br /> {<br /><br />  long o;<br /><br />  o = harga_brg() * jml_beli;<br /><br />  return o;<br /><br /> }<br /><br /><br /><br />   long harga_diskon()<br /><br /> {<br /><br /> return (harga_total()/100)*diskon();<br /><br /> }<br /><br /><br /><br /> long sub_total()<br /><br /> {<br /><br />     return harga_total() - harga_diskon();<br /><br /> }<br /><br /><br /><br /> long ppn()<br /><br /> {<br /><br />  return sub_total() * 0.1;<br /><br /> }<br /><br /><br /><br /> long grand_total()<br /><br /> {<br /><br />  return sub_total() + ppn();<br /><br /> }<br /><br /><br /><br /> long kembalian()<br /><br /> {<br /><br />  return bayar - grand_total();<br /><br /> }<br /><br /><br /><br />};<br /><br /><br /><br />main()<br /><br />{<br /><br /> Cswalayan belanja;<br /><br /> cout&lt;&lt;&quot;   SWALAYANn&quot;;<br /><br /> cout&lt;&lt;&quot; [Nama Kelompok]n&quot;;<br /><br /> cout&lt;&lt;&quot;====================================n&quot;;<br /><br /> cout&lt;&lt;&quot;Kode Barang  : &quot;; cin&gt;&gt;belanja.kode;<br /><br /> cout&lt;&lt;&quot;Nama Barang  : &quot;; cout&lt;&lt;belanja.nama_brg()&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Harga Satuan  : &quot;; cout&lt;&lt;belanja.harga_brg()&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Jumlah Beli  : &quot;; cin&gt;&gt;belanja.jml_beli;<br /><br /> cout&lt;&lt;&quot;====================================n&quot;;<br /><br /> cout&lt;&lt;&quot;Harga Total  : &quot;; cout&lt;&lt;belanja.harga_total()&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Diskon   : &quot;; <br />cout&lt;&lt;belanja.harga_diskon()&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;====================================n&quot;;<br /><br /> cout&lt;&lt;&quot;Sub Total  : &quot;; cout&lt;&lt;belanja.sub_total()&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;PPN 10%   : &quot;; cout&lt;&lt;belanja.ppn()&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;====================================n&quot;;<br /><br /> cout&lt;&lt;&quot;Grand Total  : &quot;; cout&lt;&lt;belanja.grand_total()&lt;&lt;&quot;n&quot;;<br /><br /> cout&lt;&lt;&quot;Bayar   : &quot;; cin&gt;&gt;belanja.bayar;<br /><br /> cout&lt;&lt;&quot;Kembalian  : &quot;; cout&lt;&lt;belanja.kembalian()&lt;&lt;&quot;n&quot;;<br /><br /><br /><br /> getch();<br /><br />}</code></pre>
+<p></p>
+<div><center><br />
+<!-- roy-andika_main_Blog1_300x250_as --><br />
+<ins
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7871062608972422"
+     data-ad-slot="9224561210"></ins><br />
+</center></div>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-3/">Latihan C++ #3</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://OFFLINEZIP.wpsholatihan-c-3/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Latihan C++ #2</title>
+		<link>http://OFFLINEZIP.wpsholatihan-c-2/</link>
+					<comments>http://OFFLINEZIP.wpsholatihan-c-2/#respond</comments>
+		
+		<dc:creator><![CDATA[Roy Andika]]></dc:creator>
+		<pubDate>Sat, 22 Nov 2014 04:13:00 +0000</pubDate>
+				<category><![CDATA[C++]]></category>
+		<category><![CDATA[Pemrograman]]></category>
+		<guid isPermaLink="false">http://OFFLINEZIP.wpsholatihan-c-2/</guid>
+
+					<description><![CDATA[<p>Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman. Buatlah program untuk perhitungan tarif Wartel dengan tampilan sebagai berikut: Tampilan awal:WARUNG TELEKOMUNIKASI&#x201c;[nama kelompok [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-2/">Latihan C++ #2</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css" integrity="sha256-xevuwyBEb2ZYh4nDhj0g3Z/rDBnM569hg9Vq6gEw/Sg=" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css" integrity="sha256-fPXvMqJjeydW056U7AUM/dp5L+sRz0xPK0Mx3p20nkI=" crossorigin="anonymous" />
+<div style="clear: both; text-align: center;"><img border="0" src="https://2.bp.blogspot.com/-NTFUZJVD9nQ/VGyYrsmgkCI/AAAAAAAAMfg/1ZqQhn8sdqI/s1600/C-Logo.jpg" height="171" width="320" /></div>
+<div style="text-align: justify;">Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman.</p>
+</div>
+<p><a name='more'></a></p>
+<div style="text-align: justify;"><!-- Adsense -->Buatlah program untuk perhitungan tarif Wartel dengan tampilan sebagai berikut:</p>
+<p>Tampilan awal:<br /><span style="font-family: Courier New, Courier, monospace;">WARUNG TELEKOMUNIKASI<br />&#x201c;[nama kelompok anda]&#x201d;<br />====================================<br />NO. RUANG : &lt;INPUT&gt;<br />LAMA MENELPON (MENIT) : &lt;INPUT&gt;<br />JENIS PANGGILAN (1 / 2): &lt;INPUT&gt;</span></p>
+<p>Tampilan baru selanjutnya:<br /><span style="font-family: Courier New, Courier, monospace;">WARUNG TELEKOMUNIKASI<br />&#x201c;[nama kelompok anda]&#x201d;<br />====================================<br />NO. RUANG : &lt;OUT&gt;<br />LAMA MENELPON : &lt;OUT&gt; MENIT<br />NAMA PANGGILAN : &lt;OUT&gt;<br />TARIF PER 3 MENIT : &lt;OUT&gt;<br />TOTAL TARIF TELEPON : &lt;OUT&gt;<br />PPN 10% : &lt;OUT&gt;<br />====================================<br />TOTAL : &lt;OUT&gt;<br />BAYAR : &lt;INPUT&gt;<br />KEMBALIAN : &lt;OUT&gt;</span></p>
+<p>Keterangan:</p></div>
+<div style="text-align: justify;"></div>
+<ul>
+<li>Nama panggilan= jika jenis panggilan adalah 1 maka nama panggilan “lokal”</li>
+<li>Jika jenis panggilan adalah 2 maka nama panggilan “interlokal”</li>
+<li>Tarif per 3 menit = jika jenis panggilan adalah 1 maka tariff per 3 menit Rp. 175</li>
+<li>Jika jenis panggilan adalah 2 maka tariff per 3 menit Rp. 780</li>
+<li>Total tariff panggilan = ((lama panggilan dibagi 3) ditambah satu) dikali tariff per 3 menit</li>
+<li>PPN 10% = 0.1 dikali total tariff telepon</li>
+<li>Total = total tariff telepon + PPN10%</li>
+<li>Kembalian = bayar &#8211; total</li>
+</ul>
+<p>Soal oleh: Agung Sasongko, S.Kom</p>
+<div style="text-align: center;"><span style="color: red; font-size: large;">Jawaban</span></div>
+<pre><code>#include &lt;iostream.h&gt;<br />#include &lt;conio.h&gt;<br />#include &lt;stdio.h&gt;<br /><br />class Cwartel<br />{<br /> public:<br />   int no,jns_pgl;<br />   long lama,bayar;<br /><br />   char *nama_pgl()<br />   {<br />      char *n;<br />     if   (jns_pgl == 1) {n = &quot;Local&quot;;}<br />      else if (jns_pgl == 2) {n = &quot;Interlokal&quot;;}<br />      else  {n = &quot;Kode salah, gunakan kode 1 atau 2&quot;;}<br />      return n;<br />   }<br /><br />   long harga()<br />   {<br />    long h;<br />      if  (jns_pgl == 1) {h = 175 ;}<br />      else if (jns_pgl == 2) {h = 780 ;}<br />      else {h = 0;}<br />      return h;<br />   }<br /><br />   long tarif()<br />   {<br />    long t;<br />      t = ((lama / 3) + 1) * harga();<br />      return t;<br />   }<br /><br />   long ppn()<br />   {<br />     long p;<br />      p = tarif() * 0.1;<br />      return p;<br />   }<br /><br />   long total()<br />   {<br />     long o;<br />      o = tarif() + ppn();<br />      return o;<br />   }<br /><br />   long kembalian()<br />   {<br />     long k;<br />      k = bayar - total();<br />      return k;<br />   }<br /><br />};<br /><br />main()<br />{<br />   Cwartel tarif;<br /> cout&lt;&lt;&quot;WARUNG TELEKOMUNIKASIn&quot;;<br />   cout&lt;&lt;&quot; Kelompok sayan&quot;;<br />   cout&lt;&lt;&quot;==============================n&quot;;<br />   cout&lt;&lt;&quot;No. Ruang  : &quot;; cin&gt;&gt;tarif.no;<br />   cout&lt;&lt;&quot;Lama Menelpon  : &quot;; cin&gt;&gt;tarif.lama;<br />   cout&lt;&lt;&quot;Jenis Panggilan (1 / 2) : &quot;; cin&gt;&gt;tarif.jns_pgl;<br /><br />   clrscr();<br /><br /> cout&lt;&lt;&quot;WARUNG TELEKOMUNIKASIn&quot;;<br />   cout&lt;&lt;&quot; Kelompok sayan&quot;;<br />   cout&lt;&lt;&quot;===================================n&quot;;<br />   cout&lt;&lt;&quot;No. Ruang  : &quot;; cout&lt;&lt;tarif.no&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Lama Menelpon  : &quot;; cout&lt;&lt;tarif.lama&lt;&lt;&quot; Menit&quot;&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Nama Panggilan  : &quot;; cout&lt;&lt;tarif.nama_pgl()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Tarif Per 3 Menit : &quot;; cout&lt;&lt;tarif.harga()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Total Tarif Telepon : &quot;; cout&lt;&lt;tarif.tarif()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;PPN 10%   : &quot;; cout&lt;&lt;tarif.ppn()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;===================================n&quot;;<br />   cout&lt;&lt;&quot;Total   : &quot;; cout&lt;&lt;tarif.total()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Bayar   : &quot;; cin&gt;&gt;tarif.bayar;<br />   cout&lt;&lt;&quot;Kembalian  : &quot;; cout&lt;&lt;tarif.kembalian()&lt;&lt;&quot;n&quot;;<br />   getch();<br />}<br /></code></pre>
+<div><center><br />
+<!-- roy-andika_main_Blog1_300x250_as --><br />
+<ins
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7871062608972422"
+     data-ad-slot="9224561210"></ins><br />
+</center></div>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-2/">Latihan C++ #2</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://OFFLINEZIP.wpsholatihan-c-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Latihan C++ #1</title>
+		<link>http://OFFLINEZIP.wpsholatihan-c-1/</link>
+					<comments>http://OFFLINEZIP.wpsholatihan-c-1/#respond</comments>
+		
+		<dc:creator><![CDATA[Roy Andika]]></dc:creator>
+		<pubDate>Wed, 19 Nov 2014 13:42:00 +0000</pubDate>
+				<category><![CDATA[C++]]></category>
+		<category><![CDATA[Pemrograman]]></category>
+		<guid isPermaLink="false">http://OFFLINEZIP.wpsholatihan-c-1/</guid>
+
+					<description><![CDATA[<p>Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman. Buatlah program untuk perhitungan nilai Kursus Ms. Office dengan tampilan sebagai berikut: Tampilan awal:LEMBAGA [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-1/">Latihan C++ #1</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css" integrity="sha256-xevuwyBEb2ZYh4nDhj0g3Z/rDBnM569hg9Vq6gEw/Sg=" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css" integrity="sha256-fPXvMqJjeydW056U7AUM/dp5L+sRz0xPK0Mx3p20nkI=" crossorigin="anonymous" />
+<div style="clear: both; text-align: center;"><img border="0" src="https://2.bp.blogspot.com/-NTFUZJVD9nQ/VGyYrsmgkCI/AAAAAAAAMfg/1ZqQhn8sdqI/s1600/C-Logo.jpg" height="171" width="320" /></div>
+<div style="text-align: justify;">Bagi kawan yang ingin mempelajari dan memperdalam pemrograman C++, cara paling efektif dalam menguasai pemrograman C++ adalah dengan latihan dan praktek langsung. Berikut ini adalah contoh soal beserta jawaban pemrograman C++ yang bisa dijadikan latihan untuk menghadapi Ujian Algoritma dan Pemrograman.</p>
+</div>
+<p><a name='more'></a></p>
+<div style="text-align: justify;"><!-- Adsense -->Buatlah program untuk perhitungan nilai Kursus Ms. Office dengan tampilan sebagai berikut:</p>
+<p>Tampilan awal:<br /><span style="font-family: Courier New, Courier, monospace;">LEMBAGA PENDIDIKAN KURSUS KOMPUTER<br />&#x201c;[nama kelompok anda]&#x201d;<br />====================================<br />KODE SISWA : &lt;INPUT&gt;<br />NAMA SISWA : &lt;OUTPUT&gt;<br />NILAI MS. WORD : &lt;INPUT&gt;<br />NILAI MS. EXCEL : &lt;INPUT&gt;<br />NILAI MS. POWER POINT : &lt;INPUT&gt;</span></p>
+<p>Tampilan baru selanjutnya:<br /><span style="font-family: Courier New, Courier, monospace;">LEMBAGA PENDIDIKAN KURSUS KOMPUTER<br /> &#x201c;[nama kelompok anda]&#x201d;<br />====================================<br />KODE SISWA : &lt;OUTPUT&gt;<br />NAMA SISWA : &lt;OUTPUT&gt;<br />NILAI MS. WORD : &lt;OUTPUT&gt;<br />NILAI MS. EXCEL : &lt;OUTPUT&gt;<br />NILAI MS. POWER POINT : &lt;OUTPUT&gt;<br />====================================<br />TOTAL NILAI : &lt;OUTPUT&gt;<br />STATUS : &lt;OUTPUT&gt;</span></p>
+<p>Keterangan:</p></div>
+<div style="text-align: justify;"></div>
+<ul>
+<li>Setelah tampilan awal semua data sudah di inputkan, maka masuk ke tampilan baru selanjutnya</li>
+<li>Total nilai = (nilai ms word + nilai ms. Excel + nilai ms. Power point ) / 3</li>
+<li>Status : Jika total nilai lebih dari 80 maka status “Sangat Baik”</li>
+<li>Jika total nilai lebih dari 70 maka status “baik”</li>
+<li>Jika total nilai lebih dari 60 maka status “cukup”</li>
+<li>Selain itu “gagal”</li>
+</ul>
+<div style="text-align: center;"><span style="color: red; font-size: large;">Jawaban</span></div>
+<pre><code>#include &lt;iostream.h&gt;<br />#include &lt;conio.h&gt;<br />#include &lt;stdio.h&gt;<br /><br />class Ckursus<br />{<br /> public:<br /> int kode;<br />   long word,excel,pwpoint;<br /><br /> char *nama_siswa()<br /> {<br />      char *n;<br />  if   (kode == 1) {n = &quot;Roy Andika&quot;;}<br />  else if (kode == 2) {n = &quot;Febri Triyani&quot;;}<br />  else if (kode == 3) {n = &quot;Ratna Azzahra&quot;;}<br />  else {n = &quot;Kode Siswa tidak ditemukan!&quot;;}<br />      return n;<br /> }<br /><br />   char *status()<br />   {<br />     char *s;<br />      if   (total_nilai() &gt; 60 &amp;&amp; total_nilai() &lt; 70) {s = &quot;Cukup&quot;;}<br />  else if (total_nilai() &gt; 70 &amp;&amp; total_nilai() &lt; 80) {s = &quot;Baik&quot;;}<br />  else if (total_nilai() &gt;= 80) {s = &quot;Sangat Baik&quot;;}<br />  else {s = &quot;Gagal!&quot;;}<br />      return s;<br />   }<br /><br />   long total_nilai()<br />   {<br />     return (word + excel + pwpoint) / 3;<br />   }<br /><br />};<br /><br />main()<br />{<br /> Ckursus nilai;<br /> cout&lt;&lt;&quot;LEMBAGA PENDIDIKAN KURSUS KOMPUTERn&quot;;<br /> cout&lt;&lt;&quot; Kelompok Sayan&quot;;<br /> cout&lt;&lt;&quot;=============================n&quot;;<br /> cout&lt;&lt;&quot;Kode Siswa  : &quot;; cin&gt;&gt;nilai.kode;<br /> cout&lt;&lt;&quot;Nama Siswa  : &quot;; cout&lt;&lt;nilai.nama_siswa()&lt;&lt;endl;<br /> cout&lt;&lt;&quot;Nilai Ms. Word  : &quot;; cin&gt;&gt;nilai.word;<br /> cout&lt;&lt;&quot;Nilai Ms. Excel  : &quot;; cin&gt;&gt;nilai.excel;<br /> cout&lt;&lt;&quot;Nilai Ms. Power Point : &quot;; cin&gt;&gt;nilai.pwpoint;<br /><br /> clrscr();<br /> cout&lt;&lt;&quot;LEMBAGA PENDIDIKAN KURSUS KOMPUTERn&quot;;<br /> cout&lt;&lt;&quot; Kelompok Sayan&quot;;<br /> cout&lt;&lt;&quot;==================================n&quot;;<br /> cout&lt;&lt;&quot;Kode Siswa  : &quot;; cout&lt;&lt;nilai.kode&lt;&lt;&quot;n&quot;;<br /> cout&lt;&lt;&quot;Nama Siswa  : &quot;; cout&lt;&lt;nilai.nama_siswa()&lt;&lt;&quot;n&quot;;<br /> cout&lt;&lt;&quot;Nilai Ms. Word  : &quot;; cout&lt;&lt;nilai.word&lt;&lt;&quot;n&quot;;<br /> cout&lt;&lt;&quot;Nilai Ms. Excel  : &quot;; cout&lt;&lt;nilai.excel&lt;&lt;&quot;n&quot;;<br /> cout&lt;&lt;&quot;Nilai Ms. Power Point : &quot;; cout&lt;&lt;nilai.pwpoint&lt;&lt;&quot;n&quot;;<br /> cout&lt;&lt;&quot;==================================n&quot;;<br />   cout&lt;&lt;&quot;Total Nilai  : &quot;; cout&lt;&lt;nilai.total_nilai()&lt;&lt;&quot;n&quot;;<br />   cout&lt;&lt;&quot;Status   : &quot;; cout&lt;&lt;nilai.status()&lt;&lt;&quot;n&quot;;<br /> getch();<br />}<br /></code></pre>
+<div><center><br />
+<!-- roy-andika_main_Blog1_300x250_as --><br />
+<ins
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7871062608972422"
+     data-ad-slot="9224561210"></ins><br />
+</center></div>
+<p>The post <a rel="nofollow" href="http://OFFLINEZIP.wpsholatihan-c-1/">Latihan C++ #1</a> appeared first on <a rel="nofollow" href="http://OFFLINEZIP.wpsho">Roy Andika</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://OFFLINEZIP.wpsholatihan-c-1/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
