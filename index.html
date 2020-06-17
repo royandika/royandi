@@ -48,6 +48,11 @@
 	
 	<!-- Google Recaptcha 3 -->
 	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script>
+       function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+       }
+     </script>
 	<!-- Google Recaptcha 3 -->
 	
   </head>
@@ -405,7 +410,7 @@
                 </div>
 
                 <div class="col-md-9">
-                    <form id="demo-form" autocomplete="off" method="POST" action="https://script.google.com/macros/s/AKfycbzUaz0XnMQcMkvE3PkEUDpdir2UD6YEm2Natydkow/exec" data-email="roy7andika@gmail.com" class="gform g-recaptcha pure-form pure-form-stacked" data-sitekey="6LcNqqUZAAAAADUuw_UmVqLJ15RNu7Bs3T-NxCrR" data-callback='onSubmit'>
+                    <form id="demo-form" autocomplete="off" method="POST" action="https://script.google.com/macros/s/AKfycbzUaz0XnMQcMkvE3PkEUDpdir2UD6YEm2Natydkow/exec" data-email="roy7andika@gmail.com" class="gform pure-form pure-form-stacked">
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -418,7 +423,7 @@
                         </div>
                         <textarea class="form-control" name="message" rows="4" placeholder="Message" required="required"></textarea>
                         <div class="text-right">
-                            <button type="submit" class="g-recaptcha btn read-more-btn" style="background-color:#1e2429;"><span class="fa fa-paper-plane-o"></span> Send</button>
+                            <button type="submit" class="g-recaptcha btn read-more-btn" style="background-color:#1e2429;" data-sitekey="6LdIrKUZAAAAABusXYh7F9548EQVUg-KMox4k3Fv" data-callback='onSubmit'><span class="fa fa-paper-plane-o"></span> Send</button>
                         </div>
 						    <div class="thankyou_message" style="display:none;">
 							  <h2><em>Thanks</em> for contacting us!
@@ -441,14 +446,6 @@
             </div>
         </div>
     </nav>
-
-<!-- Google Recaptcha 3 -->
- <script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
- <!-- Google Recaptcha 3 -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
