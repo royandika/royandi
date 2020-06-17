@@ -46,9 +46,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	
-	<!-- Google Recaptcha 3 -->
-	<script src="https://www.google.com/recaptcha/api.js"></script>
-	<!-- Google Recaptcha 3 -->
+	<!-- Google reCaptcha -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- Google reCaptcha -->
 	
   </head>
   <body>
@@ -405,7 +405,7 @@
                 </div>
 
                 <div class="col-md-9">
-                    <form id="demo-form" autocomplete="off" method="POST" action="https://script.google.com/macros/s/AKfycbzUaz0XnMQcMkvE3PkEUDpdir2UD6YEm2Natydkow/exec" data-email="roy7andika@gmail.com" class="gform g-recaptcha pure-form pure-form-stacked" data-sitekey="6LcNqqUZAAAAADUuw_UmVqLJ15RNu7Bs3T-NxCrR" data-callback='onSubmit'>
+                    <form autocomplete="off" method="POST" action="https://script.google.com/macros/s/AKfycbzUaz0XnMQcMkvE3PkEUDpdir2UD6YEm2Natydkow/exec" data-email="roy7andika@gmail.com" class="gform pure-form pure-form-stacked">
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -417,7 +417,8 @@
                             </div>
                         </div>
                         <textarea class="form-control" name="message" rows="4" placeholder="Message" required="required"></textarea>
-                        <div class="text-right">
+                        <div class="g-recaptcha" data-sitekey="6Lfsr6UZAAAAAN1TkHIEVbqC718q4LruvR-VBv9s"></div>
+						<div class="text-right">
                             <button type="submit" class="btn read-more-btn" style="background-color:#1e2429;"><span class="fa fa-paper-plane-o"></span> Send</button>
                         </div>
 						    <div class="thankyou_message" style="display:none;">
@@ -441,14 +442,6 @@
             </div>
         </div>
     </nav>
-
-<!-- Google Recaptcha 3 -->
- <script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
- <!-- Google Recaptcha 3 -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
