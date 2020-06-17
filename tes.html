@@ -49,7 +49,9 @@
 	<script type="text/javascript">
       var onloadCallback = function() {
         grecaptcha.render('g_recaptcha_id', {
-          'sitekey' : '6Lfsr6UZAAAAAN1TkHIEVbqC718q4LruvR-VBv9s'
+          'sitekey' : '6Lfsr6UZAAAAAN1TkHIEVbqC718q4LruvR-VBv9s',
+		  'callback' : verifyCallback,
+		  'theme' : 'dark'
         });
       };
     </script>
